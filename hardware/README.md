@@ -22,7 +22,7 @@
 # Hardware
 
 <div align="center">
-<a href="{{schematic_url}}"><img src="resources/Schematics_icon.jpg?raw=false" width="200px"><br/>Schematic</a>
+<a href="/hardware/unit_sch_v_1_0_0_ue129_mpu6050_imu.pdf"><img src="resources/Schematics_icon.jpg?raw=false" width="200px"><br/>Schematic</a>
 </div>
 
 ## Pinout
