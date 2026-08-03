@@ -1,34 +1,25 @@
+# DevLab: I2C MPU-6050 6-Axis IMU Module
 
-# DevLab: [Protocol/Interface] [Chip/Model] [Brief Description][Module/Sensor/Shield/Adapter]
-<!-- Exception:
 
-The PULSAR development board line does not use the DevLab: prefix.
 
-Format: PULSAR [MCU/Model]
-
-Examples: PULSAR C6, PULSAR H2, PULSAR RP2350
-
-The JUN R3 board also does not use DevLab:
-
-Example: JUN R3 -->
-
-## Introduction
-
-This is a modular development board based on a popular microcontroller, designed for rapid prototyping and educational use. It features flexible power options, modern connectivity, and user-friendly interfaces. An integrated LED matrix allows for simple visual feedback and display.
+The DevLab I2C MPU-6050 6-Axis IMU Module combines a three-axis accelerometer
+and a three-axis gyroscope. The board exposes the main I2C bus, the MPU-6050
+auxiliary I2C bus, interrupt and synchronization signals, an onboard 3.3 V
+regulator, and level shifting on both I2C buses.
 
 <div align="center">
-  <img src="hardware/resources/unit_top_v_1_0_0_icp10111_barometric_pressure_sensor.png" width="450px" alt="Development Board">
-  <p><em>Development Board</em></p>
+  <img src="hardware/resources/unit_top_v_1_0_0_i2c_mpu6050_6_axis_imu.png" width="450px" alt="DevLab I2C MPU-6050 6-Axis IMU Module top view">
+  <p><em>DevLab I2C MPU-6050 6-Axis IMU Module</em></p>
 </div>
 
 <div align="center">
 
 ### Quick Setup
 
-[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](#)
-[<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](#)
-[<img src="https://img.shields.io/badge/Buy%20Now-orange?style=for-the-badge" alt="Buy Now">](#)
-[<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](#)
+[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu)
+[<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/resources/external/mpu-6050_datasheet_v3%204.pdf)
+<img src="https://img.shields.io/badge/Buy%20Now-pending-lightgrey?style=for-the-badge" alt="Buy Now link pending publication">
+[<img src="https://img.shields.io/badge/Getting%20Started-experimental-purple?style=for-the-badge" alt="Getting Started experimental">](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/software/README.md)
 
 </div>
 
@@ -36,41 +27,48 @@ This is a modular development board based on a popular microcontroller, designed
 
 ## Overview
 
-| Feature           | Description                                         |
-|-------------------|-----------------------------------------------------|
-| Microcontroller   | 8-bit MCU                                           |
-| Memory            | Flash, SRAM, EEPROM                                 |
-| Clock Speed       | 16 MHz                                              |
-| Power Supply      | USB-C (5V)                                          |
-| Interfaces        | UART, I2C, SPI, PWM, ADC, GPIO                      |
-| LED Matrix        | 5x5 RGB LED Matrix                                  |
-| Connectivity      | USB-C for programming and power                     |
-| Form Factor       | UNO-compatible                                      |
-| Development IDEs  | Arduino IDE, PlatformIO                             |
-| Onboard Features  | Integrated LED matrix, programmable LED, reset button|
-| Expansion Port    | I2C connector for sensors and modules               |
+| Feature | Description |
+|---|---|
+| Inertial sensor | MPU-6050 (`IC1`) |
+| Motion sensing | Three-axis accelerometer and three-axis gyroscope |
+| Sensor full-scale ranges | Accelerometer: ±2 g, ±4 g, ±8 g, ±16 g; gyroscope: ±250, ±500, ±1000, ±2000 dps |
+| Sensor conversion | Six 16-bit ADCs, one per accelerometer and gyroscope axis |
+| Host interface | I2C through `SCL` and `SDA` |
+| Auxiliary interface | MPU-6050 auxiliary I2C through `ASCL` and `ASDA` |
+| Additional signals | `INT`, `AD0`, `FSYNC`, and `CLKIN` |
+| Regulation | AP2112K-3.3 (`U2`), 3.3 V regulator output |
+| I2C level shifting | Two BSS138AKDW dual N-channel MOSFET arrays (`Q1`, `Q2`) |
+| Connectors | Four 4-position JST SR-series connectors and two 1x5, 2.54 mm headers |
+| Hardware revision | V1.0 |
+| Manufacturer part number | UE0129 |
 
 </div>
 
+Module-level input voltage, logic thresholds, current consumption, clock
+limits, and mechanical dimensions are pending validation.
+
 ## Applications
 
-- **Prototyping:** Quickly develop and test ideas.
-- **Education:** Suitable for learning microcontroller basics.
-- **Wearables:** Compact and versatile for wearable devices.
-- **Displays:** Use the LED matrix for simple visual output.
+- Evaluation of acceleration and angular-rate sensing
+- Motion-sensing prototypes
+- I2C sensor integration and educational experiments
+- Experiments using the MPU-6050 auxiliary sensor bus and synchronization pins
 
 ## Resources
 
-- [Schematic Diagram](#)
-- [Pinout Diagram](#)
-- [Getting Started Guide](#)
+- [Schematic Diagram](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/unit_sch_v_1_0_0_ue129_mpu6050_imu.pdf)
+- [Datasheet](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/resources/external/mpu-6050_datasheet_v3%204.pdf)
+- **Pinout Diagram:** pending publication; see the verified pin tables in the [hardware documentation](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/README.md).
+- [Getting Started Guide](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/software/README.md) — experimental; hardware validation is pending.
 
 ## 📝 License
 
 All hardware and documentation in this project are licensed under the **MIT License**.  
-See [`LICENSE.md`](LICENSE.md) for details.
+See the [LICENSE](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/LICENSE) for details.
 
 <div align="center">
   <sub>Template created by UNIT Electronics</sub>
 </div>
 
+> **Note of Development:**
+> This hardware module is under active development. File and directory structures, naming conventions, and documentation formats may change as the design evolves.

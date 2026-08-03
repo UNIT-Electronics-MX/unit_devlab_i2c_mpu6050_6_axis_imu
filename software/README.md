@@ -1,25 +1,34 @@
 # Getting Started
 
-Welcome to the project! This guide will help you set up your development environment and start working with the board.
+The software in this directory is experimental and has not yet completed
+module-level validation.
 
 ## Prerequisites
 
-- Ensure you have the required hardware and cables.
-- Install necessary software tools (see [Installation](#installation) below).
+- A host controller with an Arduino-compatible `Wire` implementation
+- The `DevLab_MPU6050` library that provides `DevLab_MPU6050.h`
+- A validated power connection and common ground between host and module
 
-## Installation
+The library source and installation package are not included in this
+repository. Install the approved library release before compiling the example.
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-org/your-project.git
-    ```
-2. Follow the setup instructions in the `docs/` directory.
+## Connections
 
-## Usage
+Connect the host I2C bus to the module signals labeled `SDA` and `SCL`, and
+connect a common `GND`. The allowed module `VCC` range remains pending
+validation; confirm it before applying power.
 
-- Connect the board to your computer.
-- Build and flash the firmware as described in the [User Guide](docs/USER_GUIDE.md).
+GPIO 12 and GPIO 22 in the example are host-controller assignments. They are
+not pin numbers for the DevLab module and may need to be changed for the chosen
+controller.
+
+## Experimental Arduino Example
+
+The [basic DevLab_MPU6050 example](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/software/examples/arduino/devlab_mpu6050_basic/devlab_mpu6050_basic.ino)
+uses sensor address `0x68` and requests a 400 kHz I2C clock. The MPU-6050
+datasheet supports 400 kHz Fast-mode operation, but the complete module and
+example still require validation together.
 
 ## Support
 
-For questions or issues, please open an issue on GitHub.
+Report issues through the [project repository](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/issues).
