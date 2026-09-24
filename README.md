@@ -8,7 +8,7 @@ auxiliary I2C bus, interrupt and synchronization signals, an onboard 3.3 V
 regulator, and level shifting on both I2C buses.
 
 <div align="center">
-  <img src="hardware/resources/unit_top_v_1_0_0_i2c_mpu6050_6_axis_imu.png" width="450px" alt="DevLab I2C MPU-6050 6-Axis IMU Module top view">
+  <img src="hardware/resources/unit_top_v_1_0_0_ue0129_mpu6050_3d.png" width="450px" alt="DevLab I2C MPU-6050 6-Axis IMU Module top view">
   <p><em>DevLab I2C MPU-6050 6-Axis IMU Module</em></p>
 </div>
 
