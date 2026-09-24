@@ -29,11 +29,15 @@ The V1.0 module is identified in manufacturing records as UE0129. The
 manufacturer part number is retained here for traceability and is not the
 product name.
 
+
 ## Pinout
 
-A controlled pinout diagram is pending publication. The following mappings
-are taken from the released schematic; connector orientation on a physical
-board must be verified before assigning numeric pin positions.
+<div align="center">
+    <a href="./unit_pinout_v_1_0_0_ue0129_mpu6050_en.pdf"><img src="./resources/unit_pinout_v_1_0_0_ue0129_mpu6050_en.png" width="500px"><br/>Pinout</a>
+    <br/>
+    <br/>
+    <br/>
+
 
 | Connection group | Signal | Direction / type | Function |
 |---|---|---|---|
@@ -48,14 +52,26 @@ board must be verified before assigning numeric pin positions.
 | `J5` | `ASCL` | I2C clock | Host-side connection to the auxiliary I2C clock |
 | `J5` | `ASDA` | I2C data | Host-side connection to the auxiliary I2C data |
 
+</div>
+
 ## Dimensions
 
-Board dimensions and mounting-hole coordinates are **pending validation**. Do
-not scale dimensions from the rendered board images.
+<div align="center">
+<a href="./resources/unit_topology_v_1_0_0_ue0129_mpu6050.png"><img src="./resources/unit_dimensions_v_1_0_0_ue0129_mpu6050.png" width="500px"><br/> Dimensions</a>
+</div>
 
 ## Topology
 
-No topology diagram has been released. The schematic confirms the following
+<div align="center">
+
+<div align="center">
+<a href="./resources/unit_topology_v_1_0_0_ue0129_mpu6050.png"><img src="./resources/unit_topology_v_1_0_0_ue0129_mpu6050.png" width="500px"><br/> Topology</a>
+<br/>
+<br/>
+<br/>
+
+
+ The schematic confirms the following
 functional blocks:
 
 | Ref. | Description |
