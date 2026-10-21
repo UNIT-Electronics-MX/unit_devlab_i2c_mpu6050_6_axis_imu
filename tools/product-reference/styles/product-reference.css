@@ -53,7 +53,7 @@
   }
 
   @bottom-right {
-    content: "Product Reference V0.1.0  ·  2026-08-03";
+    content: "Product Reference V0.2.0  ·  2026-10-21";
     color: var(--muted);
     font: 500 7.5pt "Noto Sans", sans-serif;
     border-top: .5pt solid var(--line);

@@ -1,5 +1,11 @@
 ## **4 Connectors and Pinout**
 
+The released pinout drawing shows the top and bottom board views and the
+connector signal labels. Confirm connector orientation on the physical board
+before assigning numeric pin positions or connecting a cable.
+
+![UE0129 pinout, top and bottom views.](hardware/resources/unit_pinout_v_1_0_0_ue0129_mpu6050_en.png){width=5.0in}
+
 ### **4.1 Main Interface Edge (`J2`)**
 
 | Board label | Direction / type | Function |

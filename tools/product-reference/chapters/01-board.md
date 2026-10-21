@@ -9,7 +9,7 @@
 | Hardware revision | V1.0 |
 | Inertial sensor | MPU-6050 |
 | Host interface | I2C |
-| Product-reference revision | 0.1.0 |
+| Product-reference revision | 0.2.0 |
 
 ### **1.2 Package Contents**
 

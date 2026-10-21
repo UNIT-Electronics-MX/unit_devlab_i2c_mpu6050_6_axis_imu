@@ -5,7 +5,7 @@ accelerometer and a three-axis gyroscope. The board routes the MPU-6050 main
 and auxiliary I2C buses, interrupt and synchronization signals, and includes
 3.3 V regulation and I2C level shifting.
 
-![](hardware/resources/unit_top_v_1_0_0_i2c_mpu6050_6_axis_imu.png){width=5.4in}
+![Top view of the UE0129 module.](hardware/resources/unit_top_v_1_0_0_ue0129_mpu6050_3d.png){width=5.4in}
 
 ### **Applications**
 

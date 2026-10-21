@@ -3,9 +3,9 @@ title: "DevLab I2C MPU-6050 6-Axis IMU Module"
 subtitle: "Product Reference — Hardware V1.0 — Mfr. Part #: UE0129"
 author: "UNIT Electronics"
 lang: en-US
-version: "0.1.0"
+version: "0.2.0"
 part-number: "UE0129"
-date: "2026-08-03"
+date: "2026-10-21"
 toc-title: "Contents"
 
 # The order of this list determines the chapter order in the final document.

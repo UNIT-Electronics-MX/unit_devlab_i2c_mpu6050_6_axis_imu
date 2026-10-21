@@ -22,7 +22,7 @@
 # Hardware
 
 <div align="center">
-<a href="https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/unit_sch_v_1_0_0_ue129_mpu6050_imu.pdf"><img src="resources/Schematics_icon.jpg?raw=false" width="200px" alt="Schematic Diagram"><br/>Schematic</a>
+<a href="./unit_sch_v_1_0_0_ue129_mpu6050_imu.pdf"><img src="./resources/unit_sch_v_1_0_0_ue129_mpu6050_imu.png" width="700px" alt="V1.0 electrical schematic"><br/>Schematic (PDF)</a>
 </div>
 
 The V1.0 module is identified in manufacturing records as UE0129. The
@@ -57,8 +57,12 @@ product name.
 ## Dimensions
 
 <div align="center">
-<a href="./resources/unit_topology_v_1_0_0_ue0129_mpu6050.png"><img src="./resources/unit_dimensions_v_1_0_0_ue0129_mpu6050.png" width="500px"><br/> Dimensions</a>
+<a href="./resources/unit_dimensions_v_1_0_0_ue0129_mpu6050.png"><img src="./resources/unit_dimensions_v_1_0_0_ue0129_mpu6050.png" width="500px"><br/> Dimensions</a>
 </div>
+
+The drawing labels a 27.94 × 18.46 mm board outline, four Ø2.2 mm mounting
+holes, and 21.94 × 12.46 mm hole-center spacing. Mechanical tolerances and
+physical fit remain pending validation.
 
 ## Topology
 

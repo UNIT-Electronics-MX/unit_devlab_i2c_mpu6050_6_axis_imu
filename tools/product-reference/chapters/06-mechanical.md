@@ -1,8 +1,9 @@
 ## **6 Mechanical Information**
 
-![](hardware/resources/unit_top_v_1_0_0_i2c_mpu6050_6_axis_imu.png){width=5.4in}
+![Released board dimensions drawing.](hardware/resources/unit_dimensions_v_1_0_0_ue0129_mpu6050.png){width=6.3in}
 
-The artwork shows four mounting holes and ten castellated edge connections.
-A controlled dimensional drawing has not been supplied, so board dimensions,
-hole diameters, and mounting-hole coordinates are **pending validation**. Do
-not scale dimensions from the rendered image.
+The released drawing labels a 27.94 × 18.46 mm board outline, four Ø2.2 mm
+mounting holes, and 21.94 × 12.46 mm hole-center spacing. The drawing also
+shows ten castellated edge connections. These are drawing values; mechanical
+tolerances and fit remain **pending validation**. Use the labeled dimensions
+rather than scaling the image.

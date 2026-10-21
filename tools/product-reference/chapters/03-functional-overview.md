@@ -23,4 +23,19 @@ Its 3.3 V output powers both MPU-6050 supply pins and the sensor-side I2C
 pull-ups. The complete module input range is pending validation and must not be
 derived from the regulator's component rating.
 
-![](hardware/resources/unit_btm_v_1_0_0_i2c_mpu6050_6_axis_imu.png){width=5.4in}
+![Bottom view of the UE0129 module, artwork V1.1.](hardware/resources/unit_btm_v_1_1_0_ue0129_mpu6050_3d.png){width=5.4in}
+
+### **3.4 Board Topology**
+
+The released topology drawing locates the sensor, regulator, level shifters,
+connectors, and solder options on the top and bottom sides of the board.
+
+![Top and bottom board topology.](hardware/resources/unit_topology_v_1_0_0_ue0129_mpu6050.png){width=6.3in}
+
+### **3.5 Electrical Schematic**
+
+The image below is rendered from the released V1.0 schematic. Use the
+[original schematic PDF](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/unit_sch_v_1_0_0_ue129_mpu6050_imu.pdf)
+to inspect small component and net labels at full resolution.
+
+![V1.0 electrical schematic.](hardware/resources/unit_sch_v_1_0_0_ue129_mpu6050_imu.png){width=6.3in}
