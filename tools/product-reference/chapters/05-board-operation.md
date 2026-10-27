@@ -23,11 +23,11 @@ through the `J2` header or the `J1`/`J3` QWIIC connectors:
 
 The `INT` pin is optional and is only needed for interrupt-driven
 applications. Host GPIO numbers belong to the controller, not the module. The
-example below uses GPIO 12 for SDA and GPIO 22 for SCL on an ESP32 board:
+example below uses GPIO 6 for SDA and GPIO 7 for SCL on an ESP32 board(you can modify for your specific board):
 
 ```cpp
-#define SDA_PIN 12
-#define SCL_PIN 22
+#define SDA_PIN 6
+#define SCL_PIN 7
 ```
 
 **Default I²C Address**
@@ -68,7 +68,7 @@ the selected full-scale range.
 1. Connect the module to the microcontroller using the I²C interface.
 2. Open the Arduino IDE.
 3. Install the DevLab_MPU6050 library.
-4. Open the `MPU6050_BasicRead` example sketch provided with the library.
+4. Open the `BasicRead` example sketch provided with the library.
 5. Select the correct board and serial port.
 6. Compile and upload the example.
 7. Open the Serial Monitor to display the accelerometer, gyroscope, and
@@ -90,50 +90,61 @@ Developers can modify the example code to configure:
 
 ### **Example Code**
 
-Use the `MPU6050_BasicRead` example included with the library, or copy the
+Use the `BasicRead` example included with the library, or copy the
 following sketch into a new sketch:
 
 ```cpp
 #include <DevLab_MPU6050.h>
 
-#define SDA_PIN 12
-#define SCL_PIN 22
+#define SDA_PIN 6
+#define SCL_PIN 7
+#define MPU6050_ADDR 0x68
 
-DevLab_MPU6050 imu(Wire, 0x68);
-DevLab_MPU6050::SensorData data;
+DevLab_MPU6050 imu(Wire, MPU6050_ADDR);
+
+SensorData data;
 
 void setup() {
   Serial.begin(115200);
+  delay(1000);
+
+  Serial.println("Inicializando MPU6050...");
 
   if (!imu.begin(SDA_PIN, SCL_PIN, 400000)) {
-    Serial.println("MPU6050 initialization failed.");
-    while (1);
+    Serial.println("ERROR: MPU6050 no encontrado.");
+    while (1) {
+      delay(1000);
+    }
   }
+
+  Serial.println("MPU6050 inicializado correctamente.");
 }
 
 void loop() {
   if (imu.readData(data)) {
-    Serial.print("ACC X: ");
-    Serial.print(data.accX);
-    Serial.print(" Y: ");
-    Serial.print(data.accY);
-    Serial.print(" Z: ");
-    Serial.println(data.accZ);
+    Serial.print("aX = ");
+    Serial.print(data.accX / 4096.0f);
+    Serial.print(" | aY = ");
+    Serial.print(data.accY / 4096.0f);
+    Serial.print(" | aZ = ");
+    Serial.print(data.accZ / 4096.0f);
 
-    Serial.print("GYR X: ");
-    Serial.print(data.gyrX);
-    Serial.print(" Y: ");
-    Serial.print(data.gyrY);
-    Serial.print(" Z: ");
-    Serial.println(data.gyrZ);
-
-    Serial.print("Temperature: ");
+    Serial.print(" | temp = ");
     Serial.print(data.temperatureC, 2);
-    Serial.println(" °C");
+
+    Serial.print(" | gX = ");
+    Serial.print(data.gyrX);
+    Serial.print(" | gY = ");
+    Serial.print(data.gyrY);
+    Serial.print(" | gZ = ");
+    Serial.println(data.gyrZ);
+  } else {
+    Serial.println("ERROR: fallo en la lectura del MPU6050.");
   }
 
-  delay(200);
+  delay(1000);
 }
+
 ```
 
 Module-level I²C clock validation and the approved `VCC` range remain pending
