@@ -2,8 +2,8 @@
 
 ### **3.1 Block Diagram**
 
-The block diagram shows the main functional blocks of the MPU-6050 and the
-signals available on the module.
+The block diagram shows the main functional blocks of the MPU-6050 DevLab module and the
+signals available.
 
 ![MPU-6050 block diagram.](hardware/resources/unit_block_diagram_v_1_0_0_ue0129_mpu6050.png){width=6.3in}
 
