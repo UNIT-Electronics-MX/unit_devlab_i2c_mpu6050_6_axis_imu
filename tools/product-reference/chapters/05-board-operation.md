@@ -151,5 +151,14 @@ void loop() {
 
 ```
 
+> **Important**
+>
+> Make sure **USB CDC On Boot** is set to **Enabled**. This allows the ESP32-C6
+> to expose the USB Serial interface after boot, so the `Serial` output can be
+> viewed in the Arduino Serial Monitor. If this option is disabled, the sketch
+> will still run, but you may not see any serial messages.
+
+![USB CDC On Boot option enabled in the Arduino IDE.](hardware/resources/img/cdcesp32.png){width=5in}
+
 Module-level I²C clock validation and the approved `VCC` range remain pending
 testing.
