@@ -1,6 +1,13 @@
 ## **3 Functional Overview**
 
-### **3.1 Sensor and Main I2C Path**
+### **3.1 Block Diagram**
+
+The block diagram shows the main functional blocks of the MPU-6050 and the
+signals available on the module.
+
+![MPU-6050 block diagram.](hardware/resources/unit_block_diagram_v_1_0_0_ue0129_mpu6050.png){width=6.3in}
+
+### **3.2 Sensor and Main I2C Path**
 
 The MPU-6050 provides three-axis acceleration and three-axis angular-rate
 sensing with 16-bit conversion per axis and selectable full-scale ranges. Its
@@ -8,7 +15,7 @@ sensing with 16-bit conversion per axis and selectable full-scale ranges. Its
 `VCC` domain and the sensor's regulated 3.3 V domain. `J1`, `J3`, and `J2`
 provide access to the main bus.
 
-### **3.2 Auxiliary and Control Signals**
+### **3.3 Auxiliary and Control Signals**
 
 `Q2` translates the MPU-6050 auxiliary `AUX_SCL` and `AUX_SDA` lines to the
 board `ASCL` and `ASDA` connections. The board also routes `INT`, `AD0`,
@@ -16,7 +23,7 @@ board `ASCL` and `ASDA` connections. The board also routes `INT`, `AD0`,
 the physical defaults of the solder options shown in the artwork remain
 pending validation.
 
-### **3.3 Power Section**
+### **3.4 Power Section**
 
 The schematic identifies `U2` as an AP2112K-3.3 regulator supplied from `VCC`.
 Its 3.3 V output powers both MPU-6050 supply pins and the sensor-side I2C
@@ -25,7 +32,7 @@ derived from the regulator's component rating.
 
 ![Bottom view of the UE0129 module, artwork V1.1.](hardware/resources/unit_btm_v_1_1_0_ue0129_mpu6050_3d.png){width=5.4in}
 
-### **3.4 Communication Interfaces**
+### **3.5 Communication Interfaces**
 
 The MPU-6050 supports a single digital communication interface, I²C, providing
 connectivity with microcontrollers and embedded systems.
@@ -45,7 +52,7 @@ option remains pending validation, so confirm the address on the board before
 use.
 
 
-### **3.5 Library Features**
+### **3.6 Library Features**
 
 The [DevLab_MPU6050 library](https://github.com/UNIT-Electronics-MX/unit_devlab_mpu6050_library)
 for Arduino-compatible boards communicates with the sensor through direct I²C
@@ -92,14 +99,14 @@ Use the configuration functions above to change these values after calling
 - `MPU6050_ConfigSweep`: sweeps every combination of accelerometer range, gyroscope range, and DLPF setting and prints one reading per combination as CSV, useful for characterizing each setting.
 - `basic_Interrupt` and `MPU6050_Interrupt`: enable the data-ready interrupt on the `INT` pin and count the interrupts it generates.
 
-### **3.6 Board Topology**
+### **3.7 Board Topology**
 
 The released topology drawing locates the sensor, regulator, level shifters,
 connectors, and solder options on the top and bottom sides of the board.
 
 ![Top and bottom board topology.](hardware/resources/unit_topology_v_1_0_0_ue0129_mpu6050.png){width=6.3in}
 
-### **3.7 Electrical Schematic**
+### **3.8 Electrical Schematic**
 
 The image below is rendered from the released V1.0 schematic. Use the
 [original schematic PDF](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/unit_sch_v_1_0_0_ue129_mpu6050_imu.pdf)
