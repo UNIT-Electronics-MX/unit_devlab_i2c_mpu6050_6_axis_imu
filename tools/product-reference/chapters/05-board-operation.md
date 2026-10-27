@@ -7,6 +7,8 @@ application, install the
 from the Arduino Library Manager or download it from the official GitHub
 repository.
 
+![DevLab_MPU6050 library in the Arduino Library Manager.](hardware/resources/img/arduinolibrary.png){width=4.5in}
+
 ### **Hardware Interface**
 
 **I²C Connection**
@@ -38,6 +40,8 @@ example below uses GPIO 6 for SDA and GPIO 7 for SCL on an ESP32 board(you can m
 
 The module's default 7-bit I²C address is `0x68`. The sensor datasheet assigns
 `0x68` when `AD0` is low and `0x69` when it is high.
+
+![MPU-6050 module connected to the host board through I²C.](hardware/resources/img/connmpu6050.png){width=5.5in}
 
 ### **Example Operation**
 
