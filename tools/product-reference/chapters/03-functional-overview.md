@@ -19,9 +19,10 @@ provide access to the main bus.
 
 `Q2` translates the MPU-6050 auxiliary `AUX_SCL` and `AUX_SDA` lines to the
 board `ASCL` and `ASDA` connections. The board also routes `INT`, `AD0`,
-`FSYNC`, and `CLKIN`. The schematic shows `R6` connected from `AD0` to ground;
-the physical defaults of the solder options shown in the artwork remain
-pending validation.
+`FSYNC`, and `CLKIN`. The schematic shows `R6` connected from `AD0` to ground,
+and the module's default I2C address is `0x68`. The physical defaults of the
+`FSYNC` and `CLKIN` solder options shown in the artwork remain pending
+validation.
 
 ### **3.4 Power Section**
 
@@ -47,9 +48,7 @@ connectivity with microcontrollers and embedded systems.
 The device supports two selectable 7-bit I²C addresses through the `AD0` pin:
 when `AD0` is low, the address is `0x68`; when `AD0` is high, the address is
 `0x69`. On the DevLab module, `AD0` is routed to the `J5` connector and has a
-10 kΩ resistor (`R6`) to ground. The physical default of the `AD0` solder
-option remains pending validation, so confirm the address on the board before
-use.
+10 kΩ resistor (`R6`) to ground. The module's default I²C address is `0x68`.
 
 
 ### **3.6 Library Features**
