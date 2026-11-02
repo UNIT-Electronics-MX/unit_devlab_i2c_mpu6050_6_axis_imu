@@ -1,36 +1,32 @@
-> **Note of Development:**  
-> This hardware module is under active development. File and directory structures, naming conventions, and documentation formats may change as the design evolves.  
-> 
-> - **File Naming:**  
->   - Use capital letters and underscores only.  
->   - Start filenames with `unit_<filename>_v_<version>_<description>.<ext>`.  
->   - Example: `unit_mpu6050_6_axis_imu_v_1_0_0.png`
->   - Schematic: `schematic_v_<version>_<description>.<ext>` (e.g., `schematic_v_1_0_0_mpu6050_6_axis_imu.png`)
->   - Topology: `unit_topology_v_<version>_<description>.<ext>`
->   - Dimensions: `unit_dimension_v_<version>_<description>.<ext>`
-> 
-> - **README Structure:**  
->   - Hardware overview  
->   - Pinout and connector layout  
->   - Dimensions and topology  
->   - Functional description  
->   - Applications  
->   - References  
-> 
-> Please refer to the latest commit history for updates and changes.
+# DevLab I2C MPU6050 6-Axis IMU Hardware
 
-# Hardware
+## Hardware Scope
+
+This page documents **DevLab I2C MPU6050 6-Axis IMU** (MPN **UE0129**) using the V1.0 schematic, board views, and available mechanical drawings. Sensor datasheet ratings are not independently validated module limits.
+
+## Power Tree
+
+The schematic identifies `U2` as an AP2112K fixed 3.3 V regulator for the MPU-6050 circuit. A separate board-level power-tree drawing is not available; use the [electrical schematic](unit_sch_v_1_0_0_ue129_mpu6050_imu.pdf) for the confirmed connections.
+
+## Block Diagram
+
+![UE0129 functional block diagram](resources/unit_block_diagram_v_1_0_0_ue0129_mpu6050.png)
+
+## Naming Rules
+
+- Product name: **DevLab I2C MPU6050 6-Axis IMU**.
+- Product family: **UNIT DevLab ecosystem**.
+- MPN: **UE0129**.
+- Existing source files retain their published names and revisions.
+- Generated Product Reference: `unit_product_reference_v_0_2_0_i2c_mpu6050_6_axis_imu.pdf`.
+
+## Hardware
 
 <div align="center">
 <a href="./unit_sch_v_1_0_0_ue129_mpu6050_imu.pdf"><img src="./resources/unit_sch_v_1_0_0_ue129_mpu6050_imu.png" width="700px" alt="V1.0 electrical schematic"><br/>Schematic (PDF)</a>
 </div>
 
-The V1.0 module is identified in manufacturing records as UE0129. The
-manufacturer part number is retained here for traceability and is not the
-product name.
-
-
-## Board Views
+The V1.0 module is identified in manufacturing records as UE0129.
 
 ![UE0129 MPU6050 top view](resources/unit_top_v_1_0_0_ue0129_mpu6050_3d.png)
 
@@ -44,6 +40,7 @@ product name.
     <br/>
     <br/>
 
+</div>
 
 | Connection group | Signal | Direction / type | Function |
 |---|---|---|---|
@@ -58,8 +55,6 @@ product name.
 | `J5` | `ASCL` | I2C clock | Host-side connection to the auxiliary I2C clock |
 | `J5` | `ASDA` | I2C data | Host-side connection to the auxiliary I2C data |
 
-</div>
-
 ## Dimensions
 
 <div align="center">
@@ -73,16 +68,11 @@ physical fit remain pending validation.
 ## Topology
 
 <div align="center">
-
-<div align="center">
 <a href="./resources/unit_topology_v_1_0_0_ue0129_mpu6050.png"><img src="./resources/unit_topology_v_1_0_0_ue0129_mpu6050.png" width="500px"><br/> Topology</a>
-<br/>
-<br/>
-<br/>
+</div>
 
 
- The schematic confirms the following
-functional blocks:
+The schematic confirms the following functional blocks:
 
 | Ref. | Description |
 |---|---|
@@ -138,7 +128,7 @@ characteristics, not independently validated limits for the complete module.
 - I2C sensor integration and educational experiments
 - Experiments with interrupt, synchronization, and auxiliary-sensor signals
 
-# References
+## References
 
 - [Repository](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu)
 - [MPU-6000 and MPU-6050 Product Specification, Revision 3.4](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/resources/external/mpu-6050_datasheet_v3%204.pdf)
@@ -148,3 +138,5 @@ characteristics, not independently validated limits for the complete module.
 
 The sensor datasheet values above apply to the MPU-6050 component. The
 module-level electrical limits remain pending board validation.
+
+- [Product Reference](../docs/hardware/unit_product_reference_v_0_2_0_i2c_mpu6050_6_axis_imu.pdf)
