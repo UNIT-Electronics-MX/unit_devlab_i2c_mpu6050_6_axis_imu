@@ -13,6 +13,9 @@
 | Board dimensions | [Dimensioned drawing](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/resources/unit_dimensions_v_1_0_0_ue0129_mpu6050.png) |
 | Manufacturing BOM | [V1.0 BOM](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/resources/UNIT-0129-%20MPU6050-20260803T164655Z-1-001/UNIT-0129-%20MPU6050/Fabricacion/BOM/UE0129-BOM-MPU6050-001-T.xlsx) |
 | Experimental firmware | [DevLab_MPU6050 basic readout](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/software/examples/arduino/devlab_mpu6050_basic/devlab_mpu6050_basic.ino) |
+| Top view | [3D board view](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/resources/unit_top_v_1_0_0_ue0129_mpu6050_3d.png) |
+| Bottom view | [3D board view](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/resources/unit_btm_v_1_1_0_ue0129_mpu6050_3d.png) |
+| CAD model | [STEP](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/mechanics/unit_3d_v_1_0_0_ue0129_mpu6050.step) |
 
 Sensor values in this reference are taken from the MPU-6050 portions of the
 Revision 3.4 product specification. Module-level limits require separate board

@@ -30,6 +30,12 @@ manufacturer part number is retained here for traceability and is not the
 product name.
 
 
+## Board Views
+
+![UE0129 MPU6050 top view](resources/unit_top_v_1_0_0_ue0129_mpu6050_3d.png)
+
+![UE0129 MPU6050 bottom view](resources/unit_btm_v_1_1_0_ue0129_mpu6050_3d.png)
+
 ## Pinout
 
 <div align="center">
