@@ -16,10 +16,10 @@ regulator, and level shifting on both I2C buses.
 
 ### Quick Setup
 
-[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu)
-[<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/hardware/resources/external/mpu-6050_datasheet_v3%204.pdf)
-<img src="https://img.shields.io/badge/Buy%20Now-pending-lightgrey?style=for-the-badge" alt="Buy Now link pending publication">
-[<img src="https://img.shields.io/badge/Getting%20Started-experimental-purple?style=for-the-badge" alt="Getting Started experimental">](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/software/README.md)
+<img src="https://img.shields.io/badge/Product%20Wiki-pending-lightgrey?style=for-the-badge" alt="Product Wiki pending">
+[<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](docs/hardware/unit_product_reference_v_0_2_0_i2c_mpu6050_6_axis_imu.pdf)
+<img src="https://img.shields.io/badge/Buy%20Now-pending-lightgrey?style=for-the-badge" alt="Buy Now pending">
+[<img src="https://img.shields.io/badge/Getting%20Started-experimental-purple?style=for-the-badge" alt="Getting Started experimental">](software/README.md)
 
 </div>
 
@@ -65,10 +65,3 @@ limits, and mechanical dimensions are pending validation.
 
 All hardware and documentation in this project are licensed under the **MIT License**.  
 See the [LICENSE](https://github.com/UNIT-Electronics-MX/unit_devlab_i2c_mpu6050_6_axis_imu/blob/main/LICENSE) for details.
-
-<div align="center">
-  <sub>Template created by UNIT Electronics</sub>
-</div>
-
-> **Note of Development:**
-> This hardware module is under active development. File and directory structures, naming conventions, and documentation formats may change as the design evolves.
