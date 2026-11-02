@@ -2,7 +2,11 @@
 
 ## Hardware Scope
 
-This page documents **DevLab I2C MPU6050 6-Axis IMU** (MPN **UE0129**) using the V1.0 schematic, board views, and available mechanical drawings. Sensor datasheet ratings are not independently validated module limits.
+This page documents **DevLab I2C MPU6050 6-Axis IMU** using the V1.0 schematic, board views, and available mechanical drawings. Sensor datasheet ratings are not independently validated module limits.
+
+| Field | Value |
+|---|---|
+| MPN | UE0129 |
 
 ## Power Tree
 
@@ -16,7 +20,6 @@ The schematic identifies `U2` as an AP2112K fixed 3.3 V regulator for the MPU-60
 
 - Product name: **DevLab I2C MPU6050 6-Axis IMU**.
 - Product family: **UNIT DevLab ecosystem**.
-- MPN: **UE0129**.
 - Existing source files retain their published names and revisions.
 - Generated Product Reference: `unit_product_reference_v_0_2_0_i2c_mpu6050_6_axis_imu.pdf`.
 
@@ -25,8 +28,6 @@ The schematic identifies `U2` as an AP2112K fixed 3.3 V regulator for the MPU-60
 <div align="center">
 <a href="./unit_sch_v_1_0_0_ue129_mpu6050_imu.pdf"><img src="./resources/unit_sch_v_1_0_0_ue129_mpu6050_imu.png" width="700px" alt="V1.0 electrical schematic"><br/>Schematic (PDF)</a>
 </div>
-
-The V1.0 module is identified in manufacturing records as UE0129.
 
 ![UE0129 MPU6050 top view](resources/unit_top_v_1_0_0_ue0129_mpu6050_3d.png)
 
