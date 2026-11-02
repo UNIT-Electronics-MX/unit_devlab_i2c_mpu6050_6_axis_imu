@@ -40,7 +40,7 @@ regulator, and level shifting on both I2C buses.
 | I2C level shifting | Two BSS138AKDW dual N-channel MOSFET arrays (`Q1`, `Q2`) |
 | Connectors | Four 4-position JST SR-series connectors and two 1x5, 2.54 mm headers |
 | Hardware revision | V1.0 |
-| Manufacturer part number | UE0129 |
+| MPN | UE0129 |
 
 </div>
 
